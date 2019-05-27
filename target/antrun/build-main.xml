@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <echo>Using env.test.properties</echo>
+  <copy todir="/Users/fauchetleo/Documents/Cours/POO2/target/../lib">
+    <fileset includes="**" dir="/Users/fauchetleo/Documents/Cours/POO2/target/natives"/>
+  </copy>
+  <copy todir="/Users/fauchetleo/Documents/Cours/POO2/target/..">
+    <fileset includes="**" dir="/Users/fauchetleo/Documents/Cours/POO2/target/../src/main/resources"/>
+  </copy>
+</target>
+</project>
