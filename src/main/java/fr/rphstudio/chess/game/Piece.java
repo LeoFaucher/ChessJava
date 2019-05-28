@@ -5,7 +5,6 @@
  */
 package fr.rphstudio.chess.game;
 
-import fr.rphstudio.chess.interf.IChess;
 import fr.rphstudio.chess.interf.IChess.ChessColor;
 import fr.rphstudio.chess.interf.IChess.ChessType;
 

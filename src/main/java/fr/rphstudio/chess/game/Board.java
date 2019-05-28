@@ -5,8 +5,10 @@
  */
 package fr.rphstudio.chess.game;
 
+import fr.rphstudio.chess.interf.IChess;
 import fr.rphstudio.chess.interf.IChess.ChessPosition;
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  *
@@ -14,11 +16,20 @@ import java.util.HashMap;
  */
 public class Board {
     
-    private HashMap<Piece, ChessPosition> list;
     // Dans le constructeur, init la list
     // Methode pour récupérer une piece
     
-    public Board(ChessPosition x, ChessPosition y){
-                
+    Map<Piece, ChessPosition> cboard;
+        
+    IChess.ChessColor color = null;
+    IChess.ChessType type = null;
+    
+    public Board(){
+        cboard = new HashMap<Piece, ChessPosition>();
+        for(int i = 0; i <= 7; i++){
+            for(int j = 0; j <= 7; j++){
+                cboard.put(null, new ChessPosition(i, j));
+            }
+        }
     }
 }
