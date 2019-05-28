@@ -18,7 +18,7 @@ import java.util.List;
 public class ChessModel implements IChess {
     
     private static ChessModel instance; 
-    public ArrayList board;
+    
 
     public static IChess getInstance() {
         if(instance == null){
