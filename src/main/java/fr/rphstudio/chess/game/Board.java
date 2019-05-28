@@ -28,13 +28,12 @@ public class Board {
         ChessType type = null;
         cboard = new HashMap<>();
         
-        Piece piece = new Piece(ChessColor.CLR_BLACK, ChessType.TYP_BISHOP);
-        ChessPosition pos = new ChessPosition(5,3);
+        //Afficher une seule piece
+        /*Piece piece = new Piece(ChessColor.CLR_BLACK, ChessType.TYP_BISHOP);
+        ChessPosition pos = new ChessPosition(5,3);        
+        cboard.put(pos, piece);*/
         
-        cboard.put(pos, piece);
-        
-        
-        /*for(int i = 0; i <= 7; i++){
+        for(int i = 0; i <= 7; i++){
             for(int j = 0; j <= 7; j++){
                 if(j == 0 || j == 1){
                     color = IChess.ChessColor.CLR_BLACK;
@@ -44,13 +43,38 @@ public class Board {
                 }
                 else{
                     continue;
-                s}
+                }             
                 
                 switch(i){
-                    case 
+                    case 0:
+                    case 7: 
+                        type = ChessType.TYP_ROOK;
+                        break;                    
+                    case 1:
+                    case 6:
+                        type = ChessType.TYP_KNIGHT;
+                        break;                        
+                    case 2:
+                    case 5:
+                        type = ChessType.TYP_BISHOP;
+                        break;
+                    case 3:
+                        type = ChessType.TYP_QUEEN;
+                        break;
+                    case 4:
+                        type = ChessType.TYP_KING;
+                        break;                    
                 }
+                
+                if(j == 1 || j == 6){
+                    type = ChessType.TYP_PAWN;
+                }
+                
+                ChessPosition pos = new ChessPosition(i, j);
+                Piece piece = new Piece(color, type);
+                cboard.put(pos, piece);
             }
-        }*/
+        }
     }
     
     public Piece getPiece(ChessPosition pos){
