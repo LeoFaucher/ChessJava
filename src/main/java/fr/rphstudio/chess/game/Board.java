@@ -6,9 +6,8 @@
 package fr.rphstudio.chess.game;
 
 import fr.rphstudio.chess.interf.IChess;
-import fr.rphstudio.chess.interf.IChess.ChessColor;
-import fr.rphstudio.chess.interf.IChess.ChessPosition;
-import fr.rphstudio.chess.interf.IChess.ChessType;
+import fr.rphstudio.chess.interf.IChess.*;
+import fr.rphstudio.chess.interf.IMove;
 import java.util.HashMap;
 
 /**
@@ -26,6 +25,7 @@ public class Board {
         
         ChessColor color = null;
         ChessType type = null;
+        IMove move = null;
         cboard = new HashMap<>();
         
         //Afficher une seule piece
@@ -74,7 +74,7 @@ public class Board {
                 }
                 
                 ChessPosition pos = new ChessPosition(i, j);
-                Piece piece = new Piece(color, type);
+                Piece piece = new Piece(color, type, move);
                 cboard.put(pos, piece);
             }
         }
@@ -88,4 +88,18 @@ public class Board {
         }
         return null;
     }
+    
+    public int getNbPiece(ChessColor color)
+   {
+
+       int count = 0;
+       for(Piece p: cboard.values()){
+           if(p.getColor() == color){
+                count++;
+           }
+       }
+       return count;
+   }
 }
+
+    

@@ -21,6 +21,6 @@ public class Knight implements IMove {
 
     @Override
     public List<IChess.ChessPosition> getPossibleMoves(IChess.ChessPosition pos, Board board) {
-        
+        //List<>() list = new ArrayList<>;
     }
 }

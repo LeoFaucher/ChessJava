@@ -5,8 +5,8 @@
  */
 package fr.rphstudio.chess.game;
 
-import fr.rphstudio.chess.interf.IChess.ChessColor;
-import fr.rphstudio.chess.interf.IChess.ChessType;
+import fr.rphstudio.chess.interf.IChess.*;
+import fr.rphstudio.chess.interf.IMove;
 
 /**
  *
@@ -17,16 +17,11 @@ public class Piece {
     private ChessColor color;
     private ChessType type;
 
-    private Knight kniMove;
-    private Bishop bisMove;
-    private Rook rooMove;
-    private Queen queMove;
-    private King kinMove;
-    private Pawn pawMove;
+    private IMove move;
     
     // Faire Getter et Constructeur
     
-    public Piece(ChessColor color, ChessType type){
+    public Piece(ChessColor color, ChessType type, IMove move){
         this.color = color;
         this.type = type;
     }
@@ -37,6 +32,10 @@ public class Piece {
     
     public ChessColor getColor(){
         return this.color;
+    }
+    
+    public IMove getMoves(ChessPosition pos, Board brd){
+        return this.move;
     }
 }
 
