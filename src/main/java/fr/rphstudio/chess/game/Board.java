@@ -85,4 +85,22 @@ public class Board {
         }
         return null;
     }
+    
+    public int getNbPiece(ChessColor color)
+   {
+
+       int count = 0;
+       for(Piece p: cboard.values())
+       {
+           if(p.getColor() == color)
+           {
+
+                  count++;
+
+           }
+       }
+       return count;
+   }
 }
+
+    
