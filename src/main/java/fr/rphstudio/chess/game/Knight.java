@@ -5,7 +5,9 @@
  */
 package fr.rphstudio.chess.game;
 
+import fr.rphstudio.chess.interf.IChess;
 import fr.rphstudio.chess.interf.IMove;
+import java.util.*;
 
 /**
  *
@@ -13,4 +15,12 @@ import fr.rphstudio.chess.interf.IMove;
  */
 public class Knight implements IMove {
     
+    public Knight(){
+        
+    }
+
+    @Override
+    public List<IChess.ChessPosition> getPossibleMoves(IChess.ChessPosition pos, Board board) {
+        
+    }
 }

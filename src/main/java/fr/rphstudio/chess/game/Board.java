@@ -35,15 +35,18 @@ public class Board {
         
         for(int i = 0; i <= 7; i++){
             for(int j = 0; j <= 7; j++){
-                if(j == 0 || j == 1){
-                    color = IChess.ChessColor.CLR_BLACK;
+                switch (j) {
+                    case 0:
+                    case 1:
+                        color = IChess.ChessColor.CLR_BLACK;
+                        break;
+                    case 6:
+                    case 7:
+                        color = IChess.ChessColor.CLR_WHITE;
+                        break;
+                    default:
+                        continue;
                 }
-                else if(j == 6 || j == 7){
-                    color = IChess.ChessColor.CLR_WHITE;
-                }
-                else{
-                    continue;
-                }             
                 
                 switch(i){
                     case 0:

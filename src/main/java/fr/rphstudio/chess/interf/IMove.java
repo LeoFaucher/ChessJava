@@ -5,10 +5,14 @@
  */
 package fr.rphstudio.chess.interf;
 
+import fr.rphstudio.chess.game.Board;
+import fr.rphstudio.chess.interf.IChess.ChessPosition;
+import java.util.List;
+
 /**
  *
  * @author fauchetleo
  */
 public interface IMove {
-    
+    public List<ChessPosition> getPossibleMoves(ChessPosition pos, Board board);
 }

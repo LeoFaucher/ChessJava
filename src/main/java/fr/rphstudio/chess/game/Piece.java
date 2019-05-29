@@ -17,6 +17,13 @@ public class Piece {
     private ChessColor color;
     private ChessType type;
 
+    private Knight kniMove;
+    private Bishop bisMove;
+    private Rook rooMove;
+    private Queen queMove;
+    private King kinMove;
+    private Pawn pawMove;
+    
     // Faire Getter et Constructeur
     
     public Piece(ChessColor color, ChessType type){
