@@ -8,8 +8,7 @@ package fr.rphstudio.chess.game;
 import fr.rphstudio.chess.interf.EmptyCellException;
 import fr.rphstudio.chess.interf.IChess;
 import fr.rphstudio.chess.interf.OutOfBoardException;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
  *
@@ -62,11 +61,6 @@ public class ChessModel implements IChess {
         
         int count = 0;
         
-        /*for(ChessPosition p : Board.class){
-            if(p.equals(pos)){
-                count++;
-            }
-        }*/
         return count;
     }
 
