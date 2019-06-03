@@ -15,14 +15,11 @@ import java.util.*;
  */
 public class Knight implements IMove {
     
-    public Knight(){
-        
-    }
-
+    int [] x = {1, 2, 2, 1, -1, -2, -2, -1};
+    int [] y = {2, 1, -1, -2, -2, -1, 1, 2};
+    
     @Override
     public List<IChess.ChessPosition> getPossibleMoves(IChess.ChessPosition pos, Board board) {
-        ArrayList<IMove> list;
-        list = new ArrayList<>();
         
     }
 }
