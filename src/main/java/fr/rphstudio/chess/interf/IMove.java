@@ -14,5 +14,12 @@ import java.util.List;
  * @author fauchetleo
  */
 public interface IMove {
+
+    /**
+     *
+     * @param pos
+     * @param board
+     * @return
+     */
     public List<ChessPosition> getPossibleMoves(ChessPosition pos, Board board);
 }

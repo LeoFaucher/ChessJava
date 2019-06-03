@@ -18,6 +18,12 @@ public class Knight implements IMove {
     int [] x = {1, 2, 2, 1, -1, -2, -2, -1};
     int [] y = {2, 1, -1, -2, -2, -1, 1, 2};
     
+    /**
+     *
+     * @param pos
+     * @param board
+     * @return
+     */
     @Override
     public List<IChess.ChessPosition> getPossibleMoves(IChess.ChessPosition pos, Board board) {
         

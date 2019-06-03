@@ -15,6 +15,12 @@ import java.util.*;
  */
 public class Pawn implements IMove {
 
+    /**
+     *
+     * @param pos
+     * @param board
+     * @return
+     */
     @Override
     public List<IChess.ChessPosition> getPossibleMoves(IChess.ChessPosition pos, Board board) {
         List<IChess.ChessPosition> list;

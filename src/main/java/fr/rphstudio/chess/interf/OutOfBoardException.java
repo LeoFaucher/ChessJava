@@ -7,18 +7,38 @@ package fr.rphstudio.chess.interf;
  */
 public class OutOfBoardException extends ChessException
 {
+
+    /**
+     *
+     */
     public OutOfBoardException()
     {
         super();
     }
+
+    /**
+     *
+     * @param message
+     */
     public OutOfBoardException(String message)
     {
         super(message);
     }
+
+    /**
+     *
+     * @param cause
+     */
     public OutOfBoardException(Throwable cause)
     {
         super(cause);
     }
+
+    /**
+     *
+     * @param message
+     * @param cause
+     */
     public OutOfBoardException(String message, Throwable cause)
     {
         super(message, cause);

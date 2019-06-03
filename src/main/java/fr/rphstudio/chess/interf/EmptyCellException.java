@@ -7,18 +7,38 @@ package fr.rphstudio.chess.interf;
  */
 public class EmptyCellException extends ChessException
 {
+
+    /**
+     *
+     */
     public EmptyCellException()
     {
         super();
     }
+
+    /**
+     *
+     * @param message
+     */
     public EmptyCellException(String message)
     {
         super(message);
     }
+
+    /**
+     *
+     * @param cause
+     */
     public EmptyCellException(Throwable cause)
     {
         super(cause);
     }
+
+    /**
+     *
+     * @param message
+     * @param cause
+     */
     public EmptyCellException(String message, Throwable cause)
     {
         super(message, cause);

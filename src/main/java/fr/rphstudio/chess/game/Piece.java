@@ -20,20 +20,41 @@ public class Piece {
     private IMove move;
     
     // Faire Getter et Constructeur
+
+    /**
+     *
+     * @param color
+     * @param type
+     * @param move
+     */
     
     public Piece(ChessColor color, ChessType type, IMove move){
         this.color = color;
         this.type = type;
     }
     
+    /**
+     *
+     * @return
+     */
     public ChessType getType(){
         return this.type;
     }
     
+    /**
+     *
+     * @return
+     */
     public ChessColor getColor(){
         return this.color;
     }
     
+    /**
+     *
+     * @param pos
+     * @param brd
+     * @return
+     */
     public IMove getMoves(ChessPosition pos, Board brd){
         return this.move;
     }

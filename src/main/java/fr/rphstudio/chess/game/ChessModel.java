@@ -23,6 +23,10 @@ public class ChessModel implements IChess {
         grid = new Board();
     }
 
+    /**
+     *
+     * @return
+     */
     public static IChess getInstance() {
         if(instance == null){
             instance = new ChessModel();

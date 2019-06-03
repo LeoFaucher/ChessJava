@@ -21,6 +21,9 @@ public class Board {
     
     private HashMap<ChessPosition, Piece> cboard;
     
+    /**
+     *
+     */
     public Board(){
         
         ChessColor color = null;
@@ -80,6 +83,11 @@ public class Board {
         }
     }
     
+    /**
+     *
+     * @param pos
+     * @return
+     */
     public Piece getPiece(ChessPosition pos){
         for(ChessPosition p : cboard.keySet()){
             if(p.equals(pos)){
@@ -89,6 +97,11 @@ public class Board {
         return null;
     }
     
+    /**
+     *
+     * @param color
+     * @return
+     */
     public int getNbPiece(ChessColor color)
    {
 
